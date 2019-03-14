@@ -23,15 +23,15 @@ import { ingresoEgresoReducer } from './ingreso-egreso.reducer';
     IngresoEgresoComponent,
     EstadisticasComponent,
     DetalleComponent,
-    OrdenIngresoEgresoPipe,
-    StoreModule.forFeature('ingresoEgreso', ingresoEgresoReducer)
+    OrdenIngresoEgresoPipe
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     ChartsModule,
     SharedModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    StoreModule.forFeature('ingresoEgreso', ingresoEgresoReducer)
   ]
 })
 export class IngresoEgresoModule { }
